@@ -1,0 +1,7 @@
+name: Run test
+  env:
+    api_key: ${{ secrets.API_KEY }}
+    api_secret: ${{ secrets.API_SECRET_KEY }}
+    api_key_bot: ${{ secrets.API_KEY_BOT }}
+  run:
+    trade-Stoch-RSI-MACD
