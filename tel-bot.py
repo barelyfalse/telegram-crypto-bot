@@ -9,13 +9,13 @@ import re
 client = Client(api_key, api_secret)
 
 def start(update, context):
-    update.message.reply_text('Welcome to crypto bot')
+    update.message.reply_text('Este es el cryto bot')
 
 def help(update, context):
     update.message.reply_text('''
     Comandos disponibles:
-    /start -> Welcome message
-    /price [coin] -> Price
+    /start -> Mensaje de bienvenida
+    /price [par] -> Precio de un par (ej. BTCUSDT, SHIBBUSD)
     ''')
 
 def price_handled(update, context):
